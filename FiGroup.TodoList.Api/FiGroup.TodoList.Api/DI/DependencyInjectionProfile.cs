@@ -7,6 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FiGroup.TodoList.Api.Repository;
+using FiGroup.TodoList.Api.Repository.IRepository;
+using FiGroup.TodoList.Api.Application.Contracts;
+using FiGroup.TodoList.Api.Application;
+using FiGroup.TodoList.Api.Domain.Services.Contracts;
+using FiGroup.TodoList.Api.Domain.Services;
 //using Codifico.TodoList.Api.Domain.Services;
 //using Codifico.TodoList.Api.Application.Services;
 //using Codifico.TodoList.Api.Application.Contracts;
@@ -28,11 +33,12 @@ namespace Codifico.StoreSample.Api.DI
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            // services.AddTransient<EmployeesRepository>();
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<ITodoRepository, TodoRepository>();
 
-            // services.AddTransient<EmployeesDomainService>();
+            services.AddTransient<ITodoAppService, TodoAppService>();
 
-            // services.AddTransient<IEmployeesAppService, EmployeesAppService>();
+            services.AddTransient<ITodoDomainService, TodoDomainService>();
 
         }
     }

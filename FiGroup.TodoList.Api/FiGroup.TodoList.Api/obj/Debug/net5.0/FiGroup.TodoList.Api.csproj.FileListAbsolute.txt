@@ -60,3 +60,9 @@ C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.Tod
 C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\obj\Debug\net5.0\ref\FiGroup.TodoList.Api.dll
 C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\obj\Debug\net5.0\FiGroup.TodoList.Api.pdb
 C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\obj\Debug\net5.0\FiGroup.TodoList.Api.genruntimeconfig.cache
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Gustavo\Repositorios\github\FiGroup.TodoList\FiGroup.TodoList.Api\FiGroup.TodoList.Api\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
