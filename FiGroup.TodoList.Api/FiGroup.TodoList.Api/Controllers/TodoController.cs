@@ -68,9 +68,11 @@ namespace FiGroup.TodoList.Api.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult> delete(RequestTodo todo)
+
+        [Route("{id}")]
+        public async Task<ActionResult> delete(Guid id)
         {
-            var result = await _todoAppService.delete(todo);
+            var result = await _todoAppService.delete(id);
 
             if (result.Ok)
                 return Ok(result);

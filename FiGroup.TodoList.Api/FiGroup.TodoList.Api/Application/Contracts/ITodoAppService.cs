@@ -13,6 +13,6 @@ namespace FiGroup.TodoList.Api.Application.Contracts
         Task<ResponseGeneric<RequestTodo>> get(Guid Id);
         Task<ResponseGeneric<List<RequestTodo>>> get();
         Task<ResponseGeneric<List<RequestTodo>>> get(string title);
-        Task<ResponseGeneric<bool>> delete(RequestTodo todo);
+        Task<ResponseGeneric<bool>> delete(Guid Id);
     }
 }

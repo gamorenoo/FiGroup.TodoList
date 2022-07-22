@@ -9,6 +9,7 @@ CREATE TABLE [TodoList].[dbo].[Todo](
 	[Id] [uniqueidentifier] NOT NULL,
 	[Title] [varchar](50) NULL,
 	[Detail] [varchar](500) NULL,
+	[Status] [bit] NULL,
  CONSTRAINT [PK_Todo] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

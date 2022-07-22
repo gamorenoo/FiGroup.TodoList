@@ -45,9 +45,13 @@ namespace FiGroup.TodoList.Api.Repository
             return await _todoRepository.GetList(t => t.Title.Contains(title));
         }
 
-        public async Task<bool> delete(Todo todo)
+        public async Task<bool> delete(Guid Id)
         {
-            await _todoRepository.Delete(todo);
+            var todo = await _todoRepository.Get(t => t.Id.Equals(Id));
+
+            if (todo != null) await _todoRepository.Delete(todo);
+            else return false;
+
             return true;
         }
     }
