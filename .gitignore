@@ -357,3 +357,4 @@ MigrationBackup/
 FiGroup.TodoList.Api/FiGroup.TodoList.Api/bin/Debug/net5.0/FiGroup.TodoList.Api.dll
 *.pdb
 *.dll
+*.cache
