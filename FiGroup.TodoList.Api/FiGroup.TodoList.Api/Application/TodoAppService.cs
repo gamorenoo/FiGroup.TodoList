@@ -79,12 +79,11 @@ namespace FiGroup.TodoList.Api.Application
             }
         }
 
-        public async Task<ResponseGeneric<bool>> delete(RequestTodo requestTodo)
+        public async Task<ResponseGeneric<bool>> delete(Guid Id)
         {
             try
             {
-                var todo = _mapper.Map<Todo>(requestTodo);
-                var result = await _todoDomainService.delete(todo);
+                var result = await _todoDomainService.delete(Id);
 
                 return ResponseGeneric<bool>.CreateResponseOk(result);
             }

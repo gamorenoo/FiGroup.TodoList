@@ -36,9 +36,9 @@ namespace FiGroup.TodoList.Api.Domain.Services
             return await _todoRepository.get(title);
         }
 
-        public async Task<bool> delete(Todo todo)
+        public async Task<bool> delete(Guid Id)
         {
-            return await _todoRepository.delete(todo);
+            return await _todoRepository.delete(Id);
         }
     }
 }
