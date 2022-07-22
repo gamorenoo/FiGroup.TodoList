@@ -10,7 +10,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Snackbar from '@material-ui/core/Snackbar';
-import IconButton from '@material-ui/core/IconButton';
 import { saveTodo } from '../../services/todo.api.services'
 
 export default function ButtonAppBar() {
@@ -23,10 +22,6 @@ export default function ButtonAppBar() {
 
 	const handleClose = () => {
 		setOpen(false);
-	};
-	
-	const handleClickOpenSnackbar = () => {
-		setOpenSnackbar(true);
 	};
 	
 	const handleCloseSnackbar = () => {
@@ -52,7 +47,6 @@ export default function ButtonAppBar() {
 	  
 	const handleCloseTodoSave = () => {
 		if(todo.title == '' || todo.detail == ''){
-			// alert('Debe ingresar el título de la tarea');
 			setOpenSnackbar(true);
 			return false;
 		}
@@ -62,15 +56,15 @@ export default function ButtonAppBar() {
 	}
 	
 	const action = (
-    <>
+    <div>
       <Button color="secondary" size="small" onClick={handleCloseSnackbar}>
         Cerrar
       </Button>
-    </>
+    </div>
   );
   
 	return (
-		<>
+		<div>
 			<Box sx={{ flexGrow: 1 }}>
 			  <AppBar position="static">
 				<Toolbar>
@@ -112,9 +106,9 @@ export default function ButtonAppBar() {
 				</DialogActions>
 			</Dialog>
 			
-				<Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar} message="Debe ingresar el título y el detalle de la tarea" action={action}>
-				</Snackbar>
+			<Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar} message="Debe ingresar el título y el detalle de la tarea" action={action}>
+			</Snackbar>
 			
-		</>
+		</div>
 	);
 }
